@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I am the Dashbosrd</h1>
+    <div id="display"></div>
+    <button id="logOutBtn">Log Out</button>
+    
+         <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+        import { getAuth, onAuthStateChange, signOut } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js";
+          const firebaseConfig = {
+    apiKey: "AIzaSyDccFQKCHDUwXpbSj1RtjdesXNvsQRkV5s",
+    authDomain: "testing-2f292.firebaseapp.com",
+    projectId: "testing-2f292",
+    storageBucket: "testing-2f292.appspot.com",
+    messagingSenderId: "716710342994",
+    appId: "1:716710342994:web:b71f9751d5ceb189b24a8b"
+  };
+    // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth()
+  onAuthStateChange(auth,(user)=>{
+    if(user){
+        console.log(user)
+        display.innerHTML = `<h1>${user.displayName}</h1>
+        <img src='${user.photoURL}'/>
+        `
+    }else {
+        window.location.href = "index.html"
+    }
+  })
+  logOutBtn.addEventListener("click", ()=>{
+    signOut(auth).then(()=>{
+        console.log("Sign out successfully")
+    })
+  })
+    </script>
+</body>
+</html>

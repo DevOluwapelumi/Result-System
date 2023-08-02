@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main {
+    width: 30%;
+    height: 499px;
+    background-color: white;
+    float: left;
+    margin: 41px 11px 1px 151px;
+    padding: 11px;
+    border: 4px solid black;
+}
+#head {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+#main label {
+    margin-bottom: -10px;
+} 
+.btn1 {
+    outline: none;
+    border: none;
+    width: 18%;
+    height: 40px;
+    margin-right: 35px;
+    margin-top: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 33px;
+}
+.btn1:hover {
+    background-color: blue;
+    transition: 0.8s;
+}
+.btn2 {
+    outline: none;
+    border: none;
+    width: 28%;
+    height: 40px;
+    margin-right: 35px;
+    margin-top: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 33px;
+}
+.btn2:hover {
+    background-color: red;
+    transition: 0.8s;
+}
+.btn3 {
+    outline: none;
+    border: none;
+    width: 25%;
+    height: 40px;
+    margin-right: 35px;
+    margin-top: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 33px;
+}
+.btn3:hover {
+    background-color: chartreuse;
+    transition: 0.8s;
+}
+#result {
+     height: 585px;
+     width: 30%;
+     float: left;
+     margin-top: 40px;
+     background-color: white;
+     border: 4px solid black;
+}
+#head1 {
+    background-color: rgb(12, 16, 238);
+    width: 90%;
+    height: 28px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 12px;
+    margin-left: 15px;
+}
+#head2 {
+    background-color: rgb(233, 13, 13);
+    width: 90%;
+    height: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 12px;
+    margin-left: 15px;
+}
+#head3 {
+    background-color: rgb(50, 247, 11);
+    width: 90%;
+    height: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 12px;
+    margin-left: 15px;
+}
+#total {
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    /* background-color: white; */
+    font-size: 12px;
+    font-weight: 600;
+}
+#per {
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+    /* background-color: white; */
+    font-size: 12px;
+    font-weight: 600;
+}
+#grade {
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    /* background-color: white; */
+    font-size: 12px;
+    font-weight: 600;
+    font-size: medium;
+}
+
+
